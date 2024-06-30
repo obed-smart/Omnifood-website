@@ -1,0 +1,211 @@
+/**************************/
+/* HEADER */
+/**************************/
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--section-hero-bg);
+
+    height: 9.6rem;
+    padding: 0 4.8rem;
+}
+
+.header-img {
+    height: 2.4rem;
+}
+
+/**************************/
+/* NAVIGATION*/
+/**************************/
+.main-nav-list {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    gap: 1.2rem;
+}
+
+.main-nav-links:link,
+.main-nav-links:visited {
+    text-decoration: none;
+    font-size: 1.8rem;
+    color: #333;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+.main-nav-links:hover,
+.main-nav-links:active {
+    color: var(--btn-full-bg);
+}
+
+.main-nav-links:is(.nav-cta) {
+    background-color: var(--btn-full-bg);
+    padding: 1.2rem 2.4rem;
+    border-radius: 9px;
+    color: #fff;
+}
+
+.main-nav-links:is(.nav-cta):hover {
+    background-color: var(--btn-full-hover-bg);
+}
+
+/**************************/
+/* HERO SECTION */
+/**************************/
+.section-hero {
+    background-color: var(--section-hero-bg);
+    padding: 4.8rem 0 9.6rem 0;
+}
+
+.hero {
+    max-width: 130rem;
+    margin-inline: auto;
+    padding: 0 3.2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 9.6rem;
+    align-items: center;
+}
+
+
+.hero-description {
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 4.8rem;
+    line-height: 1.5;
+}
+
+
+.hero-img {
+    width: 100%;
+}
+
+.delivered-meal {
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+    margin-top: 8rem;
+}
+
+.delivered-img {
+    display: flex;
+}
+
+.delivered-img img {
+    height: 4.8rem;
+    border-radius: 50%;
+    border: 2px solid var(--section-hero-bg);
+}
+
+.delivered-img img:not(:last-of-type) {
+    margin-right: -1.6rem;
+}
+
+.delivered-text {
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.delivered-text span {
+    color: #e67e22;
+}
+
+/**************************/
+/* FEATURED IN SECTION */
+/**************************/
+.section-feature{
+    padding: 4.8rem 0 3.2rem 0;
+}
+
+.heading-feature-in{
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 0.8px;
+    margin-bottom: 2.4rem;
+    color: #999;
+}
+
+.logo-box{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo{
+    height: 3.2rem;
+    filter: brightness(0);
+    opacity: 0.5;
+}
+
+/**************************/
+/* SECTION HOW IT WORK*/
+/**************************/
+
+.section-how {
+    padding: 9.6rem 0;
+}
+
+.step-number {
+    font-size: 8.6rem;
+    font-weight: 600;
+    color: #ccc;
+    margin-bottom: 1.6rem;
+}
+
+.step-description {
+    font-size: 1.8rem;
+}
+
+.step-img-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+
+}
+
+.step-img-box::before,
+.step-img-box::after {
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 50%;
+
+
+}
+
+.step-img-box::before {
+    background-color: #fdf2e9;
+    width: 60%;
+    padding-bottom: 60%;
+    z-index: -2;
+}
+
+.step-img-box::after {
+    width: 50%;
+    padding-bottom: 50%;
+    background-color: #fae5d3;
+    z-index: -1;
+}
+
+
+.step-img {
+    width: 35%;
+}
+
+
+
+
+/**************************/
+/* MEALS SECTION */
+/**************************/
+
+
+
+/**************************/
+/* TESTIMONIALS SECTION */
+/**************************/
