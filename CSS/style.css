@@ -214,7 +214,7 @@
     transition: all 0.5s;
 }
 
-.meal:hover{
+.meal:hover {
 
     transform: translateY(-2rem);
     box-shadow: 0 3.6rem 5.2rem rgba(0, 0, 0, 0.06);
@@ -281,19 +281,19 @@
     gap: 1.2rem;
 }
 
-.meal-icon{
+.meal-icon {
     color: var(--btn-full-bg);
 
     font-size: 23px;
 }
 
-.diet-lists{
+.diet-lists {
     display: flex;
     flex-direction: column;
     gap: 2rem;
 }
 
-.diet-list{
+.diet-list {
     font-size: 1.8rem;
 
     display: flex;
@@ -301,18 +301,19 @@
     gap: 1.2rem;
 }
 
-.diet-icon{
+.diet-icon {
     color: var(--btn-full-bg);
+    font-size: 23px;
 }
 
-.all-recipes{
+.all-recipes {
     text-align: center;
 
     font-size: 1.8rem;
 }
 
 .link:link,
-.link:visited{
+.link:visited {
     display: inline-block;
     text-decoration: none;
     color: var(--btn-full-bg);
@@ -322,11 +323,73 @@
 }
 
 .link:hover,
-.link:visited{
+.link:visited {
     color: var(--btn-full-hover-bg);
     border-bottom: 1px transparent;
 }
 
+/*************************/
+/* TESTIMONIALS SECTION */
+/**************************/
+
+.section-testimonials {
+  background-color: var(--section-hero-bg);
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+ 
+}
+
+.testimonial-container{
+    padding: 6.4rem;
+}
+
+.textimonials{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 4.4rem;
+    row-gap: 8rem;
+    margin-bottom: 8rem;
+}
+
+
+.testimonial-img{
+    width: 4.8rem;
+    border-radius: 50%;
+    margin-bottom: 1.2rem;
+}
+
+.testimonial-text{
+    font-size: 1.8rem;
+    line-height: 1.8;
+    margin-bottom: 1.2rem;
+}
+
+.testimonial-name{
+font-size: 1.6rem;
+color: #6f6f6f;
+}
+
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1.6rem;
+    padding: 1.6rem;
+    align-content: center;
+}
+
+.gallery-item{
+    overflow: hidden;
+}
+
+.gallery-img{
+     width: 100%;
+    display: block;
+    transition: all 0.5s;
+}
+
+.gallery-img:hover{
+    transform: scale(1.1);
+}
 /*************************/
 /* TESTIMONIALS SECTION */
 /**************************/
