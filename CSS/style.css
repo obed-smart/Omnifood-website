@@ -295,10 +295,10 @@
 
 .diet-list {
     font-size: 1.8rem;
-
     display: flex;
     align-items: center;
     gap: 1.2rem;
+
 }
 
 .diet-icon {
@@ -333,63 +333,245 @@
 /**************************/
 
 .section-testimonials {
-  background-color: var(--section-hero-bg);
-  display: grid;
-  grid-template-columns: repeat(2,1fr);
- 
+    background-color: var(--section-hero-bg);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
 }
 
-.testimonial-container{
+.testimonial-container {
     padding: 6.4rem;
 }
 
-.textimonials{
+.textimonials {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     column-gap: 4.4rem;
     row-gap: 8rem;
     margin-bottom: 8rem;
 }
 
 
-.testimonial-img{
+.testimonial-img {
     width: 4.8rem;
     border-radius: 50%;
     margin-bottom: 1.2rem;
 }
 
-.testimonial-text{
+.testimonial-text {
     font-size: 1.8rem;
     line-height: 1.8;
     margin-bottom: 1.2rem;
 }
 
-.testimonial-name{
-font-size: 1.6rem;
-color: #6f6f6f;
+.testimonial-name {
+    font-size: 1.6rem;
+    color: #6f6f6f;
 }
 
-.gallery{
+.gallery {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 1.6rem;
     padding: 1.6rem;
     align-content: center;
 }
 
-.gallery-item{
+.gallery-item {
     overflow: hidden;
 }
 
-.gallery-img{
-     width: 100%;
+.gallery-img {
+    width: 100%;
     display: block;
     transition: all 0.5s;
 }
 
-.gallery-img:hover{
+.gallery-img:hover {
     transform: scale(1.1);
 }
+
 /*************************/
-/* TESTIMONIALS SECTION */
+/* PRICING SECTION */
 /**************************/
+
+/* 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128 */
+
+
+.section-pricing {
+    padding: 9.6rem 0;
+}
+
+.pricing-plan {
+    width: 70%;
+    padding: 4.8rem;
+    border-radius: 11px;
+    transition: all 0.4s;
+}
+
+.pricing-plan:first-of-type {
+    justify-self: end;
+    border: 2px solid var(--section-hero-bg);
+}
+
+.pricing-plan:last-of-type {
+    background-color: var(--section-hero-bg);
+    position: relative;
+    overflow: hidden;
+}
+
+.pricing-plan:last-of-type::after {
+    content: "best value";
+    position: absolute;
+    top: 3rem;
+    right: -6rem;
+    transform: rotate(30deg);
+
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    background-color: #ffd43b;
+    color: #333;
+    padding: 0.8rem 8rem;
+}
+
+.pricing-plan:hover {
+    transform: translateY(-1rem);
+
+}
+
+.plan-heading {
+    text-align: center;
+    margin-bottom: 3.2rem;
+}
+
+.plan-name {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--btn-full-bg);
+    text-transform: uppercase;
+    margin-bottom: 2.4rem;
+}
+
+.plan-price {
+    font-size: 6.2rem;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 1.6rem;
+}
+
+.plan-price span {
+    font-size: 2.4rem;
+    font-weight: 500;
+    margin-right: 0.8rem;
+}
+
+.plan-text {
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+.sign-up-btn {
+    text-align: center;
+    margin-top: 4.8rem;
+}
+
+/*** FEARTURE CONTAINER ***/
+
+.feature-icon {
+    color: var(--btn-full-bg);
+    font-size: 3rem;
+    margin-bottom: 3.2rem;
+
+    background-color: var(--section-hero-bg);
+    padding: 1rem;
+    border-radius: 50%;
+
+}
+
+.feature-title {
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 1.6rem;
+}
+
+.feature-text {
+    font-size: 1.8rem;
+    line-height: 1.5;
+}
+
+/*************************/
+/* call to action  SECTION */
+/**************************/
+
+.section-cta {
+    padding: 9.6rem 0;
+}
+
+.cta {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+
+    background-image: linear-gradient(to right bottom, #eb984e, #e67e22);
+    border-radius: 11px;
+    overflow: hidden;
+}
+
+.cta *:focus{
+    outline: none;
+
+    box-shadow: 0 0 0 0.8rem rgba(253, 242, 233, 0.5)  ;
+}
+
+
+.cta-text-box{
+    padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+    color: #45260a;
+}
+.cta .heading-secondary{
+    color: #45260a;
+    margin-bottom: 3.2rem;
+}
+.cta-text{
+    font-size: 1.8rem;
+    line-height: 1.5;
+    margin-bottom: 4.8rem;
+}
+
+.cta-form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 4.8rem;
+    row-gap: 3.2rem;
+}
+
+label{
+    display: block;
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 1.2rem;
+}
+input,select{
+    width: 100%;
+    font-size: 1.8rem;
+    padding: 1.2rem;
+    border: none;
+    font-family: inherit;
+    border-radius: 9px;
+    background-color: #fdf2e9;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+}
+
+.cta input::placeholder{
+    color: #aaa;
+}
+
+.cta-img-box {
+    background-image: linear-gradient(to right bottom, rgba(235, 151, 78, 0.3),
+     rgba(230, 125, 34, 0.3)),
+        url(../images/eating.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
