@@ -502,11 +502,11 @@
 }
 
 /*************************/
-/* call to action  SECTION */
+/* CALL-TO-ACTION  SECTION */
 /**************************/
 
 .section-cta {
-    padding: 9.6rem 0;
+    padding: 4.8rem 0 12.8rem 0;
 }
 
 .cta {
@@ -516,43 +516,49 @@
     background-image: linear-gradient(to right bottom, #eb984e, #e67e22);
     border-radius: 11px;
     overflow: hidden;
+
+    box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.2);
 }
 
-.cta *:focus{
+.cta *:focus {
     outline: none;
 
-    box-shadow: 0 0 0 0.8rem rgba(253, 242, 233, 0.5)  ;
+    box-shadow: 0 0 0 0.8rem rgba(253, 242, 233, 0.5);
 }
 
 
-.cta-text-box{
+.cta-text-box {
     padding: 4.8rem 6.4rem 6.4rem 6.4rem;
     color: #45260a;
 }
-.cta .heading-secondary{
+
+.cta .heading-secondary {
     color: #45260a;
     margin-bottom: 3.2rem;
 }
-.cta-text{
+
+.cta-text {
     font-size: 1.8rem;
     line-height: 1.5;
     margin-bottom: 4.8rem;
 }
 
-.cta-form{
+.cta-form {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 4.8rem;
     row-gap: 3.2rem;
 }
 
-label{
+label {
     display: block;
     font-size: 1.8rem;
     font-weight: 600;
     margin-bottom: 1.2rem;
 }
-input,select{
+
+input,
+select {
     width: 100%;
     font-size: 1.8rem;
     padding: 1.2rem;
@@ -563,15 +569,105 @@ input,select{
     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
 }
 
-.cta input::placeholder{
+.cta input::placeholder {
     color: #aaa;
 }
 
 .cta-img-box {
     background-image: linear-gradient(to right bottom, rgba(235, 151, 78, 0.3),
-     rgba(230, 125, 34, 0.3)),
+            rgba(230, 125, 34, 0.3)),
         url(../images/eating.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+}
+
+/*************************/
+/* FOOTER SECTION */
+/**************************/
+
+.footer {
+    padding: 12.8rem 0;
+    border-top: 1px solid #eee;
+}
+
+.footer *:focus{
+    box-shadow: 0 0 0 0.5rem rgba(230, 125, 34, 0.5);
+    transition: all 0.3s;
+}
+
+.footer-grid{
+    display: grid;
+    grid-template-columns: repeat(2,1.5fr) repeat(3,1fr);
+}
+
+.logo-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-logo {
+    display: block;
+    margin-bottom: 3.2rem;
+}
+
+.logo-col-social {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 2.4rem;
+}
+
+.logo-col-social li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-icon {
+    width: 2.4rem;
+    height: 2.4rem;
+    color: #777;
+}
+
+.logo-col-copyright {
+    font-size: 1.4rem;
+    line-height: 1.5;
+    color: #767676;
+    margin-top: auto;
+}
+
+.footer-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+}
+
+.footer-link:link,
+.footer-link:visited {
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: #767676;
+    transition: all 0.3s;
+}
+
+.footer-link:hover,
+.footer-link:active {
+    color: #333;
+}
+
+.Contact {
+  font-style: normal;
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+.Contact .address{
+    margin-bottom: 3.2rem;
+}
+
+.footer-heading {
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-bottom: 4rem;
 }
