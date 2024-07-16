@@ -7,6 +7,7 @@
     <title>Omnifood</title>
     <link rel="stylesheet" href="./CSS/style.css">
     <link rel="stylesheet" href="./CSS/general.css">
+    <link rel="stylesheet" href="./CSS/queries.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,15 +21,19 @@
 <body>
     <header class="header">
         <a href=""><img src="./images/omnifood-logo.png" alt="omnifood-logo" class="header-img"></a>
-        <nav>
+        <nav class="main-nav">
             <ul class="main-nav-list">
-                <li><a href="" class="main-nav-links">section 1</a></li>
-                <li><a href="" class="main-nav-links">section 2</a></li>
-                <li><a href="" class="main-nav-links">section 3</a></li>
-                <li><a href="" class="main-nav-links">section 4</a></li>
-                <li><a href="" class="main-nav-links nav-cta">section 5</a></li>
+                <li><a href="" class="main-nav-links">How it work</a></li>
+                <li><a href="" class="main-nav-links">Meal</a></li>
+                <li><a href="" class="main-nav-links">Testimonials</a></li>
+                <li><a href="" class="main-nav-links">pricing</a></li>
+                <li><a href="" class="main-nav-links nav-cta">Try for free</a></li>
             </ul>
         </nav>
+     <button class="btn-menu-nav">
+        <ion-icon class="btn-menu" name="menu"></ion-icon>
+        <ion-icon class="btn-menu" name="close"></ion-icon>
+     </button>
     </header>
     <main>
         <section class="section-hero">
@@ -139,11 +144,11 @@
                 <span class="subheading">meal</span>
                 <h2 class="heading-secondary">Omnifood AI chooses from 5,000+ recipes</h2>
             </div>
-            <div class="container grid grid--3-cols margin-button-md">
+            <div class="container grid grid--3-cols margin-bottom-md">
                 <div class="meal">
                     <img src="./images/meals/meal-1.jpg" class="meal-img" alt="Japanese Gyozas">
 
-                    <div class="meal-container">
+                    <div class="meal-content">
                         <div class="meal-tag">
                             <span class="tag tag--vegetarian">Vegetarian</span>
                         </div>
@@ -155,7 +160,7 @@
                             </li>
                             <li class="meal-attribute">
                                 <ion-icon class="meal-icon" name="restaurant"></ion-icon>
-                                NutriScore &reg; <strong>74</strong>
+                                NutriScore &reg;<strong>74</strong>
                             </li>
                             <li class="meal-attribute">
                                 <ion-icon class="meal-icon" name="star-outline"></ion-icon>
@@ -168,7 +173,7 @@
                 <div class="meal">
                     <img src="./images/meals/meal-2.jpg" class="meal-img" alt="Avocado Salad">
 
-                    <div class="meal-container">
+                    <div class="meal-content">
                         <div class="meal-tag">
                             <span class="tag tag--vegan">Vegan</span>
                             <span class="tag tag--paleo">Paleo</span>
@@ -182,12 +187,12 @@
 
                             <li class="meal-attribute">
                                 <ion-icon class="meal-icon" name="restaurant"></ion-icon>
-                                NutriScore &reg; <strong>92</strong>
+                                NutriScore &reg;<strong>92</strong>
                             </li>
 
                             <li class="meal-attribute">
                                 <ion-icon class="meal-icon" name="star-outline"></ion-icon>
-                                <strong>4.9</strong> rating(441)
+                                <strong>4.9</strong>rating(441)
                             </li>
                         </ul>
                     </div>

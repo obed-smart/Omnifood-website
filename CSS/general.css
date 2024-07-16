@@ -103,6 +103,7 @@ body {
     line-height: 1;
     font-weight: 400;
     color: #555;
+    overflow-x: hidden;
 }
 
 /**************************/
@@ -111,7 +112,7 @@ body {
 .container {
     max-width: 120rem;
     margin: 0 auto;
-    padding: 0 4.4rem;
+    padding: 0 3.2rem;
 }
 
 .grid {
@@ -119,6 +120,7 @@ body {
     row-gap: 9.6rem;
     column-gap: 6.4rem;
 }
+
 .grid-col-v{
     align-content: center;
 }
@@ -151,7 +153,7 @@ body {
     text-align: center !important;
 }
 
-.margin-button-md{
+.margin-bottom-md{
     margin-bottom: 4.8rem !important;
 }
 
@@ -166,12 +168,12 @@ body {
 /* reuseable class for header element in a container */
 
 .header-primary {
-    font-size:  clamp(3rem , 5vw + 1rem, 5.2rem);
+    font-size: 5.2rem;
     margin-bottom: 3.2rem;
 }
 
 .heading-secondary {
-    font-size:clamp(3.6rem , 5vw + 1rem, 4.4rem);
+    font-size:4.4rem;
     margin-bottom: 9.6rem;
 }
 
