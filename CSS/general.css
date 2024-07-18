@@ -96,7 +96,9 @@ html {
 
 }
 
-ul,ol,li{
+ul,
+ol,
+li {
     list-style-type: none;
 }
 
@@ -106,6 +108,11 @@ body {
     font-weight: 400;
     color: #555;
     overflow-x: hidden;
+}
+
+body:has(.open-nav) {
+    overflow: hidden;
+    height: 100vh;
 }
 
 /**************************/
@@ -123,7 +130,7 @@ body {
     column-gap: 6.4rem;
 }
 
-.grid-col-v{
+.grid-col-v {
     align-content: center;
 }
 
@@ -141,7 +148,7 @@ body {
 
 
 
-.grid:not(:last-of-type){
+.grid:not(:last-of-type) {
     margin-bottom: 9.6rem;
 }
 
@@ -149,11 +156,11 @@ body {
     margin-right: 1.6rem !important;
 }
 
-.text-center{
+.text-center {
     text-align: center !important;
 }
 
-.margin-bottom-md{
+.margin-bottom-md {
     margin-bottom: 4.8rem !important;
 }
 
@@ -165,6 +172,7 @@ body {
     letter-spacing: -0.5px;
     color: var(--header-text);
 }
+
 /* reuseable class for header element in a container */
 
 .header-primary {
@@ -173,32 +181,32 @@ body {
 }
 
 .heading-secondary {
-    font-size:4.4rem;
+    font-size: 4.4rem;
     margin-bottom: 9.6rem;
 }
 
-.heading-tertiary{
-    font-size: 3rem ;
+.heading-tertiary {
+    font-size: 3rem;
     margin-bottom: 3.2rem;
     line-height: 1.2;
 }
 
-.subheading{
+.subheading {
     display: block;
     font-size: 1.6rem;
     font-weight: 500;
-    color: var(--btn-full-bg); 
-    margin-bottom:2rem;
+    color: var(--btn-full-bg);
+    margin-bottom: 2rem;
     text-transform: uppercase;
 }
 
-.btn-form{
-background-color: #45260a;
-color: #fdf2e9;
-align-self: end;
+.btn-form {
+    background-color: #45260a;
+    color: #fdf2e9;
+    align-self: end;
 }
 
-.btn-form:hover{
+.btn-form:hover {
     background-color: #fdf2e9;
     color: #45260a;
 }
@@ -246,17 +254,17 @@ align-self: end;
 }
 
 
-strong{
+strong {
     font-weight: 600;
 }
 
-.pricing-guild{
+.pricing-guild {
     text-align: center;
-     font-size: 1.8rem; 
-     line-height: 1.5;
+    font-size: 1.8rem;
+    line-height: 1.5;
 }
 
-*:focus{
+*:focus {
     outline: none;
 
     box-shadow: 0 0 0 0.8rem rgba(230, 125, 34, 0.5);

@@ -190,6 +190,7 @@
 
     .btn-menu-nav {
         display: block;
+        z-index: 9999;
     }
 
     .open-nav .main-nav {
@@ -208,6 +209,8 @@
     .open-nav .btn-menu[name="menu"] {
         display: none;
     }
+
+ 
 }
 
 /**************************/
