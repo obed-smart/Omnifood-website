@@ -35,8 +35,6 @@
         gap: 3.2rem;
     }
 
-
-
     .grid {
         display: grid;
         row-gap: 6.4rem;
@@ -75,9 +73,9 @@
 
 @media (max-width:68em) {
 
-    .grid--3-cols {
+    /* .grid--3-cols {
         grid-template-columns: repeat(2, 1.9fr) 1fr;
-    }
+    } */
 }
 
 /**************************/
@@ -118,10 +116,10 @@
         font-size: 7.4rem;
     }
 
-    .grid--3-cols {
-        /* grid-template-columns: repeat(2, 1.5fr) 1fr; */
-        align-items: self-start;
-    }
+    /* .grid--3-cols {
+        grid-template-columns: repeat(2, 1.5fr) 1fr; */
+    /* align-items: self-start;
+    } */
 
     .meal-content {
         margin: 3.2rem 3.2rem 3.2rem 3.2rem;
@@ -162,7 +160,7 @@
         top: 0;
         left: 0;
         background-color: rgba(255, 255, 255, 0.95);
-        
+
         width: 100%;
         height: 100vh;
 
@@ -174,6 +172,10 @@
         transform: translateX(100%);
 
         opacity: 0;
+
+        pointer-events: none;
+
+        visibility: hidden;
     }
 
     .main-nav-list {
@@ -183,7 +185,7 @@
 
     .main-nav-links:link,
     .main-nav-links:visited {
-        font-size: 3.6rem;
+        font-size: 3.2rem;
     }
 
     .btn-menu-nav {
@@ -193,6 +195,10 @@
     .open-nav .main-nav {
         opacity: 1;
         transform: translateX(0);
+
+        pointer-events: auto;
+
+        visibility: visible;
     }
 
     .open-nav .btn-menu[name="close"] {
@@ -202,9 +208,188 @@
     .open-nav .btn-menu[name="menu"] {
         display: none;
     }
+}
+
+/**************************/
+/* BELOW 768PX */
+/**************************/
+
+@media (max-width:48rem) {
+
+    .grid--3-cols,
+    .grid--4-cols {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .diet {
+        grid-column: 1/-1;
+        justify-self: center;
+    }
+
+    .pricing-plan {
+        width: 100%;
+    }
+
+    .heading-secondary {
+        margin-bottom: 4.8rem;
+    }
+
+    .footer-grid {
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    .nav-col {
+        grid-row: 1;
+        grid-column: span 2;
+        margin-bottom: 3.2rem;
+    }
+
+    .address-col,
+    .logo-col {
+        grid-column: span 3;
+        grid-row: 2;
+    }
+}
+
+/**************************/
+/* BELOW 640PX */
+/**************************/
+
+@media (max-width: 40em) {
+
+    .logo {
+        height: 1.4rem;
+    }
+
+    .section-meal {
+        padding: 4.4rem;
+    }
 
 }
 
+/**************************/
+/* BELOW 550PX */
+/**************************/
+
+@media (max-width: 34em) {
+
+    .logo {
+        height: 1.2rem;
+    }
+
+    .logo-box {
+        justify-content: space-between;
+    }
+
+    .grid--2-cols,
+    .grid--3-cols,
+    .grid--4-cols {
+        grid-template-columns: 1fr;
+    }
+
+    .section-hero {
+        padding: 2.4rem 0 6.4rem 0;
+    }
+
+    .hero {
+        padding: 0 3.2rem;
+    }
+
+    .delivered-meal {
+        flex-direction: column;
+    }
+
+    .delivered-img img {
+        height: 6.4rem;
+
+    }
+
+    .hero-img {
+        width: 80%;
+    }
+
+    .section-meal {
+        padding: 3.2rem;
+    }
+
+    .btn,
+    .btn:link,
+    .btn:visited {
+        padding: 2.4rem 1.6rem;
+        font-size: 2rem;
+
+    }
+
+    .step-img-box {
+        transform: translateY(24px);
+    }
+
+    .step-img-box:nth-child(2) {
+        grid-row: 1;
+    }
+
+    .step-img-box:nth-child(6) {
+        grid-row: 5;
+    }
+
+    .step-img {
+        width: 40%;
+    }
+
+    .step-img-box::before {
+        width: 70%;
+        padding-bottom: 70%;
+    }
+
+    .step-img-box::after {
+        width: 60%;
+        padding-bottom: 60%;
+    }
+
+    .heading-secondary {
+        font-size: 3.6rem;
+        line-height: 1.1;
+    }
+
+    .subheading {
+        font-size: 2rem;
+    }
+
+    .textimonials {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .gallery {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .cta {
+        grid-template-columns: 1fr;
+    }
+
+    .cta-img-box {
+        height: 30rem;
+        grid-row: 1;
+    }
+
+    .cta-text-box {
+        padding: 3.2rem 4.6rem 4.6rem 4.6rem;
+    }
+
+    .logo-col-copyright,
+    .cta-text{
+        font-size: 2rem;
+    }
+    
+    .Contact,
+    .footer-link:link,
+    .footer-link:visited {
+        font-size: 2rem;
+    }
+
+}
 
 /* - Font sizes (px)
 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98

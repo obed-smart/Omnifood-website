@@ -21,8 +21,8 @@
 <body>
     <header class="header">
         <a href=""><img src="./images/omnifood-logo.png" alt="omnifood-logo" class="header-img"></a>
-        <nav class="main-nav">
-            <ul class="main-nav-list">
+        <nav class="main-nav" aria-labelledby="menu-btn">
+            <ul class="main-nav-list" id="nav-list">
                 <li><a href="" class="main-nav-links">How it work</a></li>
                 <li><a href="" class="main-nav-links">Meal</a></li>
                 <li><a href="" class="main-nav-links">Testimonials</a></li>
@@ -30,7 +30,7 @@
                 <li><a href="" class="main-nav-links nav-cta">Try for free</a></li>
             </ul>
         </nav>
-     <button class="btn-menu-nav">
+     <button class="btn-menu-nav" id="menu-btn" aria-label="menu button" >
         <ion-icon class="btn-menu" name="menu"></ion-icon>
         <ion-icon class="btn-menu" name="close"></ion-icon>
      </button>
@@ -140,7 +140,7 @@
         </section>
 
         <section class="section-meal">
-            <div class="container text-center">
+            <div class="container text-center" >
                 <span class="subheading">meal</span>
                 <h2 class="heading-secondary">Omnifood AI chooses from 5,000+ recipes</h2>
             </div>
@@ -198,7 +198,7 @@
                     </div>
                 </div>
 
-                <div>
+                <div class="diet">
                     <h3 class="heading-tertiary">works with any diet:</h3>
                     <ul class="diet-lists">
                         <li class="diet-list">
@@ -383,7 +383,7 @@
             </div>
 
             <div class="container grid">
-                <p style="text-align: center; font-size: 1.8rem;">Prices include all applicable taxes. Users can cancel
+                <p class="pricing-guild">Prices include all applicable taxes. Users can cancel
                     at any time. Both plane include the following</p>
             </div>
 
