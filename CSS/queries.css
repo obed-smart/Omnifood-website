@@ -172,6 +172,7 @@
         transform: translateX(100%);
 
         opacity: 0;
+     
 
         pointer-events: none;
 
@@ -196,6 +197,7 @@
     .open-nav .main-nav {
         opacity: 1;
         transform: translateX(0);
+        
 
         pointer-events: auto;
 
