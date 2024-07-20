@@ -17,19 +17,21 @@
     <script type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule="" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.js"></script>
 
+    <script src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
+
     <script src="script.js" defer></script>
 </head>
 
 <body>
     <header class="header">
-        <a href=""><img src="./images/omnifood-logo.png" alt="omnifood-logo" class="header-img"></a>
+        <a href="#"><img src="./images/omnifood-logo.png" alt="omnifood-logo" class="header-img"></a>
         <nav class="main-nav" aria-labelledby="menu-btn">
             <ul class="main-nav-list" id="nav-list">
-                <li><a href="" class="main-nav-links">How it work</a></li>
-                <li><a href="" class="main-nav-links">Meal</a></li>
-                <li><a href="" class="main-nav-links">Testimonials</a></li>
-                <li><a href="" class="main-nav-links">pricing</a></li>
-                <li><a href="" class="main-nav-links nav-cta">Try for free</a></li>
+                <li><a href="#how-it-work" class="main-nav-links">How it work</a></li>
+                <li><a href="#meals" class="main-nav-links">Meal</a></li>
+                <li><a href="#testimonials" class="main-nav-links">Testimonials</a></li>
+                <li><a href="#pricing" class="main-nav-links">pricing</a></li>
+                <li><a href="#cta" class="main-nav-links nav-cta">Try for free</a></li>
             </ul>
         </nav>
      <button class="btn-menu-nav" id="menu-btn" aria-label="menu button" >
@@ -48,8 +50,8 @@
                         again. Tailored to your
                         personal tastes and nutritional needs.</p>
 
-                    <a href="" class="btn btn-full magin-right-sm">Start Eating well</a>
-                    <a href="" class="btn btn-outline">Learn more &darr;</a>
+                    <a href="#cta" class="btn btn-full magin-right-sm">Start Eating well</a>
+                    <a href="#how-it-work" class="btn btn-outline">Learn more &darr;</a>
 
                     <div class="delivered-meal">
                         <div class="delivered-img">
@@ -85,7 +87,7 @@
             </div>
         </section>
 
-        <section class="section-how">
+        <section class="section-how" id="how-it-work">
             <div class="container">
                 <span class="subheading">How it work</span>
                 <h2 class="heading-secondary">Your daily dose of health in 3 simple steps</h2>
@@ -126,7 +128,7 @@
 
                 <div class="step-text-box">
                     <p class="step-number">03</p>
-                    <h3 class="heading-tertiary"> Receive meals at convenient time</h3>
+                    <h3 class="heading-tertiary">Receive meals at convenient time</h3>
                     <p class="step-description">
                         Best chefs in town will cook your selected meal every day, and
                         we will deliver it to your door whenever works best for you. You can change delivery schedule
@@ -141,7 +143,7 @@
             </div>
         </section>
 
-        <section class="section-meal">
+        <section class="section-meal" id="meals">
             <div class="container text-center" >
                 <span class="subheading">meal</span>
                 <h2 class="heading-secondary">Omnifood AI chooses from 5,000+ recipes</h2>
@@ -255,7 +257,7 @@
             </div>
         </section>
 
-        <section class="section-testimonials">
+        <section class="section-testimonials" id="testimonials">
             <div class="testimonial-container">
                 <span class="subheading">Testimonials</span>
                 <h2 class="heading-secondary">once you try it, you can't go back</h2>
@@ -320,7 +322,7 @@
                 </figure>
             </div>
         </section>
-        <section class="section-pricing">
+        <section class="section-pricing" id="pricing">
             <div class="container">
                 <span class="subheading">pricing</span>
                 <h2 class="heading-secondary">Eating well without breaking the bank</h2>
@@ -419,7 +421,7 @@
             </div>
         </section>
 
-        <section class="section-cta">
+        <section class="section-cta" id="cta">
             <div class="container">
                 <div class="cta">
                     <div class="cta-text-box">
