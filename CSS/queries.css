@@ -68,17 +68,6 @@
 }
 
 /**************************/
-/* BELOW 1080PX */
-/**************************/
-
-@media (max-width:68em) {
-
-    /* .grid--3-cols {
-        grid-template-columns: repeat(2, 1.9fr) 1fr;
-    } */
-}
-
-/**************************/
 /* BELOW 940PX */
 /**************************/
 
@@ -131,6 +120,7 @@
 
     .gallery {
         grid-template-columns: repeat(6, 1fr);
+        gap: ;
     }
 
     .testimonial-container {
@@ -368,6 +358,7 @@
 
     .gallery {
         grid-template-columns: repeat(4, 1fr);
+        gap: 0.8rem;
     }
 
     .cta {

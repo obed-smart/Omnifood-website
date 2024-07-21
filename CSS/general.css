@@ -93,6 +93,7 @@ Medium: 11px
 html {
     font-size: 62.5%;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 ul,
@@ -109,12 +110,12 @@ body {
 
 }
 
-body:has(.open-nav) {
+/* body:has(.open-nav) {
     overflow: hidden;
     height: 100vh;
 }
 
-/* body:not(.open-nav) {
+body:not(.open-nav) {
     overflow: auto;
 } */
 
