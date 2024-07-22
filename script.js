@@ -40,10 +40,31 @@ allLinks.forEach((link) => {
         }
 
         if (link.classList.contains("main-nav-links")) {
-            header.classList.toggle("open-nav")
+            header.classList.toggle("open-nav");
         }
 
+    });
+});
+
+const sectonHeroElement = document.querySelector(".section-hero")
+
+const newObserver = new IntersectionObserver(
+
+    //// A callback function to execute ////
+    (entries) => {
+        const entry = entries[0];
+        if (!entry.isIntersecting) {
+            header.classList.add("sticky")
+        } else {
+            header.classList.remove("sticky")
+        }
+    },
+
+    /// An option that will detamine at which state or condition that the callback will invoke ///
+    {
+        root: null,
+        threshold: 0,
+        rootMargin: "-80px",
     })
-})
-
-
+/// calling the observer to observe the sectonHeroElement ///
+newObserver.observe(sectonHeroElement)

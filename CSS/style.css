@@ -71,8 +71,27 @@
     display: none;
 }
 
+/**************************/
+/* STICKY NAVIGATION */
+/**************************/
 
+.sticky {
+position: sticky;
+left: 0;
+top: 0;
+width: 100%;
+height: 8rem;
+background-color: rgba(255, 255, 255, 0.95);
+padding-top: 0;
+padding-bottom: 0;
+z-index: 1000;
+box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.1);
 
+}
+
+.sticky .section-hero{
+    margin-top: 9.6rem;
+}
 
 /**************************/
 /* HERO SECTION */

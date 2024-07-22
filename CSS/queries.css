@@ -120,7 +120,6 @@
 
     .gallery {
         grid-template-columns: repeat(6, 1fr);
-        gap: ;
     }
 
     .testimonial-container {
@@ -149,8 +148,9 @@
         position: absolute;
         top: 0;
         left: 0;
-        background-color: rgba(255, 255, 255, 0.95);
-
+        background-color: rgba(255, 255, 255, 0.4);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(13px);
         width: 100%;
         height: 100vh;
 
@@ -162,7 +162,7 @@
         transform: translateX(100%);
 
         opacity: 0;
-     
+
 
         pointer-events: none;
 
@@ -187,7 +187,7 @@
     .open-nav .main-nav {
         opacity: 1;
         transform: translateX(0);
-        
+
 
         pointer-events: auto;
 
@@ -202,7 +202,7 @@
         display: none;
     }
 
- 
+
 }
 
 /**************************/
@@ -375,10 +375,10 @@
     }
 
     .logo-col-copyright,
-    .cta-text{
+    .cta-text {
         font-size: 2rem;
     }
-    
+
     .Contact,
     .footer-link:link,
     .footer-link:visited {
