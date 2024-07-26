@@ -371,7 +371,7 @@
     }
 
     .cta-text-box {
-        padding: 3.2rem 4.6rem 4.6rem 4.6rem;
+        padding: 3.2rem;
     }
 
     .logo-col-copyright,
@@ -384,7 +384,6 @@
     .footer-link:visited {
         font-size: 2rem;
     }
-
 }
 
 /* - Font sizes (px)

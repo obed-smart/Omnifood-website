@@ -14,6 +14,7 @@ updateYear.textContent = currentYear;
 
 menuBtb.addEventListener('click', () => {
     header.classList.toggle("open-nav")
+    
 })
 
 // 
@@ -41,6 +42,8 @@ allLinks.forEach((link) => {
 
         if (link.classList.contains("main-nav-links")) {
             header.classList.toggle("open-nav");
+
+            document.body.classList.remove("no-scroll")
         }
 
     });
@@ -53,10 +56,13 @@ const newObserver = new IntersectionObserver(
     //// A callback function to execute ////
     (entries) => {
         const entry = entries[0];
-        if (!entry.isIntersecting) {
-            header.classList.add("sticky")
-        } else {
-            header.classList.remove("sticky")
+
+        if (entry.isIntersecting === false) {
+            console.log("your in")
+           document.body.classList.add("sticky")
+        }else{
+            document.body.classList.remove("sticky")
+
         }
     },
 

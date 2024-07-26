@@ -107,17 +107,15 @@ body {
     line-height: 1;
     font-weight: 400;
     color: #555;
-
+    overflow-x: hidden;
+    position: relative;
 }
 
-/* body:has(.open-nav) {
+ /* .no-scroll  {
     overflow: hidden;
     height: 100vh;
-}
+}  */
 
-body:not(.open-nav) {
-    overflow: auto;
-} */
 
 /**************************/
 /* GENERAL REUSEABLE COMPONENT */
